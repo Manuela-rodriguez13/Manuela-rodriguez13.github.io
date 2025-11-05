@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Paul Fisher - Resume</title>
   <style>
-    /* ======= GENERAL STYLES ======= */
     body {
-      margin: 0;  
+      margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
       background-color: #f3f6fa;
       color: #2b2b2b;
@@ -24,12 +23,13 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
-    /* ======= LEFT COLUMN ======= */
+    /* LEFT COLUMN */
     .left-column {
       background-color: #e2eefc;
       width: 35%;
       padding: 30px;
       box-sizing: border-box;
+      text-align: center; /* Center the image and text */
     }
 
     .profile-pic {
@@ -37,6 +37,10 @@
       height: 120px;
       border-radius: 10px;
       margin-bottom: 15px;
+      object-fit: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .name {
@@ -61,6 +65,7 @@
       display: inline-block;
       margin-top: 20px;
       margin-bottom: 10px;
+      user-select: none;
     }
 
     ul {
@@ -73,7 +78,7 @@
       line-height: 1.5;
     }
 
-    /* ======= RIGHT COLUMN ======= */
+    /* RIGHT COLUMN */
     .right-column {
       width: 65%;
       padding: 40px 30px;
@@ -105,6 +110,7 @@
       border-radius: 4px;
       display: inline-block;
       margin-bottom: 10px;
+      user-select: none;
     }
 
     .section p {
@@ -126,13 +132,14 @@
       text-decoration: underline;
     }
 
-    /* ======= RESPONSIVE ======= */
+    /* RESPONSIVE */
     @media (max-width: 800px) {
       .cv-container {
         flex-direction: column;
       }
 
-      .left-column, .right-column {
+      .left-column,
+      .right-column {
         width: 100%;
       }
 
@@ -143,20 +150,16 @@
   </style>
 </head>
 <body>
-
   <div class="cv-container">
     <!-- Left Column -->
     <div class="left-column">
-     <img src="https://Manuela-rodriguez13.github.io/paul.png" alt="Photo of Paul Fisher" class="profile-pic">
+      <img
+        src="https://Manuela-rodriguez13.github.io/paul.png"
+        alt="Photo of Paul Fisher"
+        class="profile-pic"
+      />
       <div class="name">Paul Fisher</div>
       <div class="age">28 years old</div>
-
-      <div class="section-title">Experience</div>
-      <p><strong>Tangerine - FL</strong><br>Tangerine High School<br>Goalkeeper</p>
-      <ul>
-        <li>Goalkeeper from middle school through university.</li>
-        <li>Developed teamwork, discipline, and leadership skills.</li>
-      </ul>
 
       <div class="section-title">Languages</div>
       <ul>
@@ -176,7 +179,24 @@
     <!-- Right Column -->
     <div class="right-column">
       <div class="about">
-        <p>I studied sports marketing at Tangerine University, hold a master's degree in physical training, and have been a goalkeeper since middle school.</p>
+        <p>
+          I studied sports marketing at Tangerine University, hold a master's
+          degree in physical training, and have been a goalkeeper since middle
+          school.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Experience</h2>
+        <p>
+          <strong>Tangerine - FL</strong><br />
+          Tangerine High School<br />
+          Goalkeeper
+        </p>
+        <ul>
+          <li>Goalkeeper from middle school through university.</li>
+          <li>Developed teamwork, discipline, and leadership skills.</li>
+        </ul>
       </div>
 
       <div class="section">
@@ -197,8 +217,8 @@
       </div>
     </div>
   </div>
-
 </body>
 </html>
+
 
 
