@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Paul Fisher - Resume</title>
   <style>
     /* ======= GENERAL STYLES ======= */
@@ -30,6 +30,7 @@
       width: 35%;
       padding: 30px;
       box-sizing: border-box;
+      text-align: center;
     }
 
     .profile-pic {
@@ -37,6 +38,7 @@
       height: 120px;
       border-radius: 10px;
       margin-bottom: 15px;
+      object-fit: cover;
     }
 
     .name {
@@ -66,6 +68,8 @@
     ul {
       list-style-type: disc;
       margin-left: 20px;
+      text-align: left;
+      padding-left: 0;
     }
 
     li {
@@ -96,7 +100,7 @@
       margin-bottom: 25px;
     }
 
-    .section h2 {
+    .section h2, .section .section-title {
       background-color: #a7c6ee;
       color: #1c3557;
       font-size: 17px;
@@ -147,16 +151,9 @@
   <div class="cv-container">
     <!-- Left Column -->
     <div class="left-column">
-      <img src="profile_image.jpg" alt="Photo of Paul Fisher" class="profile-pic">
+      <img src="profile_image.jpg" alt="Photo of Paul Fisher" class="profile-pic" />
       <div class="name">Paul Fisher</div>
       <div class="age">28 years old</div>
-
-      <div class="section-title">Experience</div>
-      <p><strong>Tangerine - FL</strong><br>Tangerine High School<br>Goalkeeper</p>
-      <ul>
-        <li>Goalkeeper from middle school through university.</li>
-        <li>Developed teamwork, discipline, and leadership skills.</li>
-      </ul>
 
       <div class="section-title">Languages</div>
       <ul>
@@ -175,8 +172,21 @@
 
     <!-- Right Column -->
     <div class="right-column">
+
+      <div class="section">
+        <div class="section-title">Experience</div>
+        <p><strong>Tangerine - FL</strong><br />Tangerine High School<br />Goalkeeper</p>
+        <ul>
+          <li>Goalkeeper from middle school through university.</li>
+          <li>Developed teamwork, discipline, and leadership skills.</li>
+        </ul>
+      </div>
+
       <div class="about">
-        <p>I studied sports marketing at Tangerine University, hold a master's degree in physical training, and have been a goalkeeper since middle school.</p>
+        <p>
+          I studied sports marketing at Tangerine University, hold a master's degree
+          in physical training, and have been a goalkeeper since middle school.
+        </p>
       </div>
 
       <div class="section">
@@ -200,3 +210,4 @@
 
 </body>
 </html>
+
